@@ -21,4 +21,15 @@ export class CalendarComponent implements OnInit {
       });
   }
 
+
+  delEvent(eventId:number) {
+    this.eventsService
+      .deleteEvent(eventId)
+      .subscribe();
+
+
+
+      }
+
+
 }

@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CalendarComponent } from './component/calendar/calendar.component';
 import {HttpClientModule} from "@angular/common/http";
+import { AddEventComponent } from './component/add-event/add-event.component';
+import {FormsModule} from "@angular/forms";
+import { EditEventComponent } from './edit-event/edit-event.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CalendarComponent
+    CalendarComponent,
+    AddEventComponent,
+    EditEventComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
