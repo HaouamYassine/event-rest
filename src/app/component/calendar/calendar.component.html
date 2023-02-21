@@ -1,8 +1,12 @@
+<!--<div *ngFor="let event of events" style="padding: 20px">-->
+<!--<input type="text" (click)="sortByType(event.type)">Sort by type</input>-->
+<!--</div>-->
+
 <div *ngFor="let event of events" style="padding: 20px">
   <div>Id : {{event.id}}</div>
   <div>Title : {{event.title}}</div>
   <div>Time : {{event.time}}</div>
   <div>Type : {{event.type}}</div>
-  <button> Edit </button>
+  <button type="button" (click)="editEvent(event.id)">Edit</button>
   <button type="button" (click)="delEvent(event.id)">Delete</button>
 </div>
