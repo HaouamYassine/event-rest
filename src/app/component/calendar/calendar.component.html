@@ -1,1 +1,7 @@
-<p>calendar works!</p>
+<div *ngFor="let event of events" style="padding: 20px">
+  <div>Id : {{event.id}}</div>
+  <div>Title : {{event.title}}</div>
+  <div>Time : {{event.time}}</div>
+  <div>Type : {{event.type}}</div>
+
+</div>
