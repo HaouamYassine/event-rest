@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {EventsService} from "../../services/events.service";
+import {Event} from "../../models/event";
 
 @Component({
   selector: 'app-edit-event',
@@ -8,26 +9,17 @@ import {EventsService} from "../../services/events.service";
 })
 export class EditEventComponent {
 
-  event = {
-    title: '',
-    time: '',
-    type: ''
-  };
+  events?: Event[];
 
   constructor(private eventsService:EventsService) {
   }
 
-  editEvent() {
-    this.eventsService
-      .updateEvent(this.event)
-      .subscribe(ok => {
-        alert('ok')
-      })
-  }
 
 
-
-
+  // editEvent(){
+  //
+  //   this.eventsService.updateEvent(event)
+  // }
 
 
 

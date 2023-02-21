@@ -7,12 +7,6 @@
       "type": "Routine"
     },
     {
-      "id": 2,
-      "title": "Petit déjeuner",
-      "time": "08:00",
-      "type": "Repas"
-    },
-    {
       "id": 3,
       "title": "Réunion",
       "time": "09:00",
@@ -41,24 +35,6 @@
       "title": "Dîner",
       "time": "19:00",
       "type": "Repas"
-    },
-    {
-      "id": 8,
-      "title": "Lecture",
-      "time": "21:00",
-      "type": "Loisir"
-    },
-    {
-      "id": 9,
-      "title": "Coucher",
-      "time": "23:00",
-      "type": "Routine"
-    },
-    {
-      "id": 25,
-      "title": "Mort",
-      "time": "22:00",
-      "type": "Routine"
     }
   ]
 }
